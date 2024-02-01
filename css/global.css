@@ -1,0 +1,88 @@
+/*barra de navegação personalizada*/
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #000000;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #fca311;
+}
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url(../fonts/Montserrat-Regular.ttf);
+  font-display: block;
+}
+
+body {
+  background-color: #070707;
+  font-family: "Montserrat-Regular", sans-serif;
+}
+
+/*Galeria de imagem*/
+.tz-gallery {
+  padding: 40px;
+}
+
+.tz-gallery .lightbox img {
+  width: 100%;
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 14px 4px rgb(0, 0, 0);
+}
+
+.tz-gallery .lightbox img:hover {
+  transition: 0.5s;
+  box-shadow: 0px 0px 14px 4px #fca311;
+}
+
+.tz-gallery img {
+  border-radius: 4px;
+}
+
+.baguetteBox-button {
+  background-color: transparent !important;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+  }
+
+  .container.gallery-container {
+    border-radius: 0;
+  }
+}
+
+.imgteste {
+  background-color: #14213d;
+  background-position: left top;
+  background-size: cover;
+}
+
+.teste {
+  background-image: linear-gradient(to bottom, #000000, #14213d);
+}
+
+/* Paleta de cores para texto */
+
+.text-amarelo {
+  color: #fca311;
+}
+
+.bg-amarelo {
+  background-color: #000000;
+}
+
+
+.link-amal {
+    color: #fca311;
+    cursor: pointer;
+}
+
+.link-amal:hover {
+    color: #fff;
+    transition: 0.5s;
+}
