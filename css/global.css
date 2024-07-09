@@ -67,7 +67,6 @@ body {
 }
 
 /* Paleta de cores para texto */
-
 .text-amarelo {
   color: #fca311;
 }
@@ -84,6 +83,12 @@ body {
 .link-amal:hover {
   color: #fff;
   transition: 0.5s;
+}
+
+
+.botao-sombra:hover {
+  transition: 0.3s;
+  box-shadow: 0px 0px 10px 4px #fca311;
 }
 
 /* inicio do Preloader */
