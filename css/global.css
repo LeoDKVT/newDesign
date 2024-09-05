@@ -66,6 +66,14 @@ body {
   background-image: linear-gradient(to bottom, #000000, #14213d);
 }
 
+.teste1 {
+  background-image: linear-gradient(to bottom, #14213d, #fca311);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
 /* Paleta de cores para texto */
 .text-amarelo {
   color: #fca311;
@@ -74,6 +82,8 @@ body {
 .bg-amarelo {
   background-color: #000000;
 }
+
+
 
 .link-amal {
   color: #fca311;
