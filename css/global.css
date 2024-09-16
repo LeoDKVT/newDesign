@@ -1,3 +1,9 @@
+img {
+  pointer-events: none;
+  user-drag: none;
+  -webkit-user-drag: none;
+}
+
 /*barra de navegação personalizada*/
 body::-webkit-scrollbar {
   width: 12px;
