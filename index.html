@@ -148,8 +148,10 @@
                     <div class="row">
                         <div class="col-sm-6 col-md-4">
                             <figure class="figure">
-                                <a class="lightbox" href="assets/images/logotipo/mylogo.webp" ondragstart="return false;" oncontextmenu="return false;">
-                                    <img src="assets/images/logotipo/mylogo.webp" alt="Logotipo do meu site" ondragstart="return false;" oncontextmenu="return false;">
+                                <a class="lightbox" href="assets/images/logotipo/mylogo.webp"
+                                    ondragstart="return false;" oncontextmenu="return false;">
+                                    <img src="assets/images/logotipo/mylogo.webp" alt="Logotipo do meu site"
+                                        ondragstart="return false;" oncontextmenu="return false;">
                                 </a>
                                 <figcaption class="figure-caption text-white text-end">Logotipo que eu mesmo desenvolvi
                                     para representar a identidade visual do meu site.
@@ -381,6 +383,21 @@
             if (e.target.tagName === 'IMG') {
                 e.preventDefault();
             }
+        });
+    </script>
+
+    <script>
+        // Seleciona todas as imagens na página
+        const images = document.querySelectorAll('img');
+
+        // Aplica os eventos ondragstart e oncontextmenu a todas as imagens
+        images.forEach(function (img) {
+            img.ondragstart = function () {
+                return false; // Impede o arrastar da imagem
+            };
+            img.oncontextmenu = function () {
+                return false; // Impede o menu de contexto (botão direito)
+            };
         });
     </script>
 
