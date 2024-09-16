@@ -322,6 +322,22 @@
         </div>
     </div>
 
+    <!-- Desabilita as funcionalidades de arrastar e soltar e o botão direito clicar -->
+    <script>
+        // Seleciona todas as imagens na página
+        const images = document.querySelectorAll('img');
+
+        // Aplica os eventos ondragstart e oncontextmenu a todas as imagens
+        images.forEach(function (img) {
+            img.ondragstart = function () {
+                return false; // Impede o arrastar da imagem
+            };
+            img.oncontextmenu = function () {
+                return false; // Impede o menu de contexto (botão direito)
+            };
+        });
+    </script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
     <script>
         baguetteBox.run('.tz-gallery');

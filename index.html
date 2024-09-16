@@ -372,20 +372,7 @@
         </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
-    <script>
-        baguetteBox.run('.tz-gallery');
-    </script>
-
-    <!-- Desativa o clique com o botão direito -->
-    <script>
-        document.addEventListener('contextmenu', function (e) {
-            if (e.target.tagName === 'IMG') {
-                e.preventDefault();
-            }
-        });
-    </script>
-
+    <!-- Desabilita as funcionalidades de arrastar e soltar e o botão direito clicar -->
     <script>
         // Seleciona todas as imagens na página
         const images = document.querySelectorAll('img');
@@ -399,6 +386,11 @@
                 return false; // Impede o menu de contexto (botão direito)
             };
         });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+    <script>
+        baguetteBox.run('.tz-gallery');
     </script>
 
     <!-- Carregamento inicial da página antes da apresentação do conteúdo -->
