@@ -1,8 +1,6 @@
-img {
-  cursor: default; /* Desativa o cursor padrão de seleção */
-  user-select: none; /* Impede a seleção de texto dentro da imagem */
-  -webkit-user-drag: none; /* Suporte para Safari */
-}
+
+
+
 
 /*barra de navegação personalizada*/
 body::-webkit-scrollbar {

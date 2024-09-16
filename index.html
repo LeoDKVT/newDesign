@@ -375,9 +375,12 @@
         baguetteBox.run('.tz-gallery');
     </script>
 
+    <!-- Desativa o clique com o botão direito -->
     <script>
         document.addEventListener('contextmenu', function (e) {
-            e.preventDefault();
+            if (e.target.tagName === 'IMG') {
+                e.preventDefault();
+            }
         });
     </script>
 
